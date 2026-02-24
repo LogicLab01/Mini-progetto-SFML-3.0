@@ -1,0 +1,49 @@
+# --- Compilazione e Build ---
+# Ignora la cartella dove CMake genera i file di compilazione
+build/
+bin/
+obj/
+
+# --- File generati da CMake ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# --- VS Code ---
+# Ignora le impostazioni locali dell'editor
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.history/
+
+# --- MSVC / Visual Studio (se mai dovessi usarlo) ---
+.vs/
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.sdf
+*.suo
+
+# --- File Binari e Librerie ---
+# Non vogliamo caricare le DLL o gli eseguibili (si ricreano compilando)
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# --- Altri file di sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Risorse pesanti (Opzionale) ---
+# Se hai asset giganti, potresti volerli ignorare, 
+# ma di solito per piccoli progetti SFML si tengono.
+# assets/large_video.mp4
